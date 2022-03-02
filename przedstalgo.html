@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=UTF-8">
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <pre>
+Różne sposoby przedstawiania algorytmów
+a)opis słowny
+Jest na ogół pierwszym, mało ścisłym opisem sposobem rozwiązania problemu. Rozpoczyna 
+się często dyskusją, w jaki sposób można rozwiązać postawione zadanie. Dyskusja służy do 
+rozważań nad sposobem i technikami przydatnymi w rozwiązania problemu.
+np. Opis słowny do algorytmu opisującego funkcję modułu (wartość bezwzględną).
+Dla wartości dodatnich argumentu x funkcja przyjmuje wartość x, dla wartości ujemnych 
+argumentu x funkcja przyjmuje wartość –x.
+b)schemat blokowy
+c)lista kroków
+Poszczególne kroki zawierają opis operacji, które mają być wykonane prze algorytm. Mogą w 
+nich również wystąpić polecenia związane ze zmianą kolejności wykonywanych kroków. 
+Kolejność kroków jest wykonywana w kolejności ich opisu z wyjątkiem sytuacji gdy jedno z 
+poleceń w kroku jest przejściem do kroku o podanym numerze. Budowa opisu algorytmu w 
+postaci listy kroków jest następujący:
+ tytuł algorytmu
+ specyfikacja problemu
+ lista kroków
+ komentarze ujęte w nawiasy klamrowe {komentarz}
+uwaga: Krok 0 może być opuszczony
+<img src="1.png" width="" height="" />
+Algorytm obliczania wartości funkcji SGN(x)
+Dane: Dowolna liczba rzeczywista x.
+Wynik:Wartość funkcji
+Krok 0. Wczytaj wartość danej x
+Krok 1. Jeśli x>0, to f(x)=1. Zakończ algorytm.
+Krok 2. {W tym przypadku x<= 0.} Jeśli x=0, to f(x)=0 . Zakończ algorytm.
+Krok 3. {W tym przypadku x< 0.} Mamy f(x)=–1 . Zakończ algorytm.
+d)drzewo algorytmu
+Nazywany jest również drzewem obliczeń. Każde dwie drogi obliczeń mogą mieć tylko 
+początkowe fragmenty wspólne, ale po rozejściu już się nie spotkają.
+np. Drzewo algorytmu dla funkcji SGN(x).
+<img src="2.png" width="" height="" />
+e)drzewo wyrażeń
+Stosowane do obliczeń wyrażeń arytmetycznych.
+np. Wyrażenie (a+sin(x))*b/(a–b)
+<img src="3.png" width="" height="" />
+f)program w języku programowania np. C++, Pascal
+g)pseudojęzyk
+PROGRAM Wycieczka;
+ZMIENNE punkty:naturalne;
+        koszty, dofinansowanie:rzeczywiste;
+ZACZNIJ;
+        WPROWADŹ(PUNKTY,KOSZTY);
+        JEŚLI punkty >=100 i punkty <= TO dofinansowanie :=1/3*koszty+0.2*koszty
+                                    W PRZECIWNYM WYPADKU 
+dofinansowanie:=0.2*koszty;
+        WYPROWADŹ('Dofinansowanie wynosi:'dofinansowanie);
+ZAKOŃCZ.
+
+        </pre>
+    </body>
+</html>

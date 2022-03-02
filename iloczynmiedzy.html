@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=UTF-8">
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <pre>
+<img src="iloczynmiedzy.png" />
+<textarea style="width: 700px; height: 900px;">
+    #include <cstdlib>
+        #include <iostream>
+        
+        using namespace std;
+        
+        int main(int argc, char *argv[])
+        {
+        system("chcp 1250");
+        int gora_kow;
+        int dol_kow;
+        int liczba;
+        cout<<"podaj górną granicę obliczania sumy=";
+        cin>>gora_kow;
+        cout<<"podaj dolną granicę obliczania sumy=";
+        cin>>dol_kow;
+        
+        liczba=1;
+        
+        for (int i=dol_kow;i<=gora_kow;i++)
+            {
+                liczba=liczba*i;
+            }
+        
+        cout<<liczba<<endl;
+        
+        system("PAUSE");
+        return EXIT_SUCCESS;
+        }
+</textarea>
+        </pre>
+    </body>
+</html>

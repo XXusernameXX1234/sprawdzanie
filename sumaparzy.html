@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=UTF-8">
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <pre>
+<img src="sumaparzy.png" />
+<textarea style="width: 700px; height: 900px;">
+    #include <iostream>
+        #include <conio.h>
+        #include <cstdlib>
+        
+        /* run this program using the console pauser or add your own getch, system("pause") or input loop */
+        using namespace std;
+        int main(int argc, char** argv) {
+            
+            int poczatek;
+            int koniec;
+            int suma;
+            
+            cout<<"podaj poczatek ";
+            cin>>poczatek;
+            cout<<"podaj koniec ";
+            cin>>koniec;
+            
+            for(int i=poczatek;i<=koniec;i++)
+            {
+                if(i%2==0)
+                {
+                    suma=suma+i;
+                    cout<<i<<endl;
+                }
+            }
+            cout<<"suma = "<<suma<<endl;
+            
+            system("PAUSE");
+            return EXIT_SUCCESS;
+        }
+</textarea>
+        </pre>
+    </body>
+</html>
